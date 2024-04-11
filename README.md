@@ -1,7 +1,7 @@
 # Tengrinews for nfactorial incubator
 Instructions:
 1) ```git clone https://github.com/abdikadyr1/Tengrinews.git```
-2) install all needs from req.txt
+2) install all needs from req.txt ```pip install -r req.txt```
 3) install file Tengrinews and open main.py
 4) write to terminal ```uvicorn main:app --reload```
 5) click the local port
