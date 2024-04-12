@@ -13,6 +13,6 @@ app.mount("/static",StaticFiles(directory="static",html=True),name="static")
 @app.get("/")
 def get_home_page(request : Request):
     all_articles = parse_all()
-    response = {"request" : request, "articles" : all_articles["articles"], "sports" : all_articles["sports"], "relevants" : all_articles["relevants"], "travels" : all_articles["travels"], "mains" : all_articles["mains"], "edus" : all_articles["edus"]}
+    response = {"request" : request, "articles" : all_articles["articles"], "sports" : all_articles["sports"], "travels" : all_articles["travels"], "mains" : all_articles["mains"], "edus" : all_articles["edus"]}
     return templates.TemplateResponse('main.html', response)
 
